@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Puppies</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Feel Good Puppies!</h1>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="puppies">How many Puppies would you like to see?</label>
+            <input class="js-number" type="number" name="numberOfPuppies" placeholder="Enter a number between 1 - 50">
+            <input class="button" type="submit" value="Submit">
+        </form>
+        <div class="imgContainer">
+        </div>
+        <div class="warning hidden">
+            <h2>Please Enter a number between 1 and 50</h2>
+        </div>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

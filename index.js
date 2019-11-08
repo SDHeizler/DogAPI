@@ -1,7 +1,7 @@
 'use strict';
 
 $(function () {
-    console.log('App Successfully Loaded!')
+    console.log('App Successfully Loaded!');
     watchForm();
 });
 
@@ -22,8 +22,9 @@ function numberOfDogs(number) {
     } else if (number < 1) {
         number = 3;
     }
+    let options = { method: 'GET' };
     let dogNumber = `https://dog.ceo/api/breeds/image/random/${number}`
-    fetch(dogNumber)
+    fetch(dogNumber, options)
         .then(function (response) {
             return response.json();
         })
